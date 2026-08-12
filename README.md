@@ -33,7 +33,6 @@ Les tests suivants ont été effectués avec succès :
 
 Figure 1 : Topologie réseau globale du MiniLab (VLANs & Router-on-a-Stick).
 <img width="683" height="405" alt="image" src="https://github.com/user-attachments/assets/1c787eb8-bae6-46ae-858d-2858e9297796" />
-
 Figure 2 : Attribution d'adresse IP via DHCP sur un poste client (VLAN 10).
 <img width="481" height="399" alt="image" src="https://github.com/user-attachments/assets/de84ee1a-3314-42d8-90d8-8aa9913d3c87" />
 
