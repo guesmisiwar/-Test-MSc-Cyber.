@@ -30,6 +30,14 @@ Les tests suivants ont été effectués avec succès :
 - **Wi-Fi :** Connexion des Laptops via les Access Points.
 
 <img width="635" height="407" alt="image" src="https://github.com/user-attachments/assets/75f0defb-1f85-46b1-a4f6-1c2f6db6c650" />
-<img width="635" height="407" alt="image" src="https://github.com/user-attachments/assets/12c5c90c-0daa-44a2-9586-550acd30ec5a" /><img width="635" height="407" alt="image" src="https://github.com/user-attachments/assets/30e1623e-06b0-4ddf-b038-9d26a603f158" />
+Figure 1 : Topologie réseau globale du MiniLab (VLANs & Router-on-a-Stick).
+<img width="683" height="405" alt="image" src="https://github.com/user-attachments/assets/1c787eb8-bae6-46ae-858d-2858e9297796" />
+<img width="481" height="399" alt="image" src="https://github.com/user-attachments/assets/de84ee1a-3314-42d8-90d8-8aa9913d3c87" />
+
+<img width="390" height="213" alt="image" src="https://github.com/user-attachments/assets/7a13a4b3-9b3b-4c36-b739-feed207adbfd" />
+<img width="393" height="216" alt="image" src="https://github.com/user-attachments/assets/c672af72-a87c-4b52-9430-d5322d14a2a2" />
+<img width="394" height="495" alt="image" src="https://github.com/user-attachments/assets/220be5b3-1d06-40d0-91e3-b51288a9a0c5" />
+
+
 
 
