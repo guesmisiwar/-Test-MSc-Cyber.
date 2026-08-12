@@ -41,10 +41,12 @@ Figure 2 : Attribution d'adresse IP via DHCP sur un poste client (VLAN 10).
 
 
 <img width="390" height="213" alt="image" src="https://github.com/user-attachments/assets/7a13a4b3-9b3b-4c36-b739-feed207adbfd" />
-
-
 Figure 3 : Connectivité sans fil et adressage IP du Laptop (VLAN 20).
+
+
+
 <img width="393" height="216" alt="image" src="https://github.com/user-attachments/assets/c672af72-a87c-4b52-9430-d5322d14a2a2" />
+Figure 5 : Vérification de la base de données des VLANs sur le Switch principal.
 
 
 <img width="394" height="495" alt="image" src="https://github.com/user-attachments/assets/220be5b3-1d06-40d0-91e3-b51288a9a0c5" />
