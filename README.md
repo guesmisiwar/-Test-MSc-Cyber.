@@ -43,6 +43,7 @@ Figure 2 : Attribution d'adresse IP via DHCP sur un poste client (VLAN 10).
 <img width="390" height="213" alt="image" src="https://github.com/user-attachments/assets/7a13a4b3-9b3b-4c36-b739-feed207adbfd" />
 
 
+Figure 3 : Connectivité sans fil et adressage IP du Laptop (VLAN 20).
 <img width="393" height="216" alt="image" src="https://github.com/user-attachments/assets/c672af72-a87c-4b52-9430-d5322d14a2a2" />
 
 
@@ -50,6 +51,6 @@ Figure 2 : Attribution d'adresse IP via DHCP sur un poste client (VLAN 10).
 
 
 
-
+Figure 6 : État des sous-interfaces du routeur (Gateway Inter-VLAN).
 
 
