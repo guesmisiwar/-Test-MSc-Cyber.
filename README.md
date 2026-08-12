@@ -44,8 +44,17 @@ Les tests suivants ont été effectués avec succès :
 
 <img width="393" height="216" alt="image" src="https://github.com/user-attachments/assets/c672af72-a87c-4b52-9430-d5322d14a2a2" />
 
+<img width="392" height="493" alt="image" src="https://github.com/user-attachments/assets/6b98c69b-1df1-4e1c-a796-01d14fac1b94" />
+
 
 <img width="394" height="495" alt="image" src="https://github.com/user-attachments/assets/220be5b3-1d06-40d0-91e3-b51288a9a0c5" />
+
+<img width="393" height="500" alt="image" src="https://github.com/user-attachments/assets/4b0177da-2aa6-4495-9258-2f155f71e8ee" />
+
+<img width="440" height="285" alt="image" src="https://github.com/user-attachments/assets/0b7b648c-c4c9-477f-bb3b-f4e7f5523514" />
+
+
+
 
 
 
