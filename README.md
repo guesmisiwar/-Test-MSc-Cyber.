@@ -55,10 +55,10 @@ Les tests suivants ont été effectués avec succès :
 
 
 
-## 🔐 Exercice 02 : Identity Management (Active Directory)
+##  Exercice 02 : Identity Management (Active Directory)
 
 
-### 🛠️ Ce que j'ai réalisé :
+###  Ce que j'ai réalisé :
 1. **Installation du Domaine :** Création d'une forêt AD pour le domaine `laplateforme.io`.
 2. **Automatisation PowerShell :** Au lieu de créer les utilisateurs manuellement, j'ai développé un script `ImportAD.ps1` qui lit un fichier `utilisateurs.csv`.
 3. **Sécurité :** 
@@ -66,7 +66,7 @@ Les tests suivants ont été effectués avec succès :
    - Activation de l'option **"Le changement de mot de passe est requis à la prochaine connexion"** pour garantir la confidentialité.
 4. **Gestion des Groupes :** Le script gère automatiquement l'appartenance multi-groupes (Animation, Médical, Cadres, etc.) comme demandé dans le sujet.
 
-### 📸 Preuves de fonctionnement :
+###  Preuves de fonctionnement :
 * Exécution du script dans PowerShell (Succès de l'importation).
 *   <img width="366" height="253" alt="image" src="https://github.com/user-attachments/assets/d7f30120-f0c4-4b2c-8395-dff68b2e9433" />
 
@@ -76,22 +76,22 @@ Les tests suivants ont été effectués avec succès :
 
 
 
-## 🐳 Exercice 03 : Déploiement Web Conteneurisé (WordPress/PHP-FPM/Nginx)
+##  Exercice 03 : Déploiement Web Conteneurisé (WordPress/PHP-FPM/Nginx)
 
 Ce module présente une infrastructure avancée répondant aux exigences strictes du sujet, utilisant des services découplés et un stockage partagé.
 
-### 🛠️ Architecture réalisée :
+###  Architecture réalisée :
 Conformément à l'énoncé, l'architecture repose sur trois images distinctes orchestrées par **Docker Compose** :
 1.  **MariaDB :** Gestionnaire de base de données relationnelle.
 2.  **PHP (via WordPress-FPM) :** Moteur de traitement PHP pour l'application WordPress.
 3.  **Nginx :** Serveur Web configuré comme Reverse Proxy pour traiter les requêtes statiques et déléguer le PHP au moteur FPM via FastCGI.
 
-### 🚀 Points Clés Techniques :
+###  Points Clés Techniques :
 *   **Volume Commun :** Utilisation d'un volume partagé (`wp_shared_data`) entre le conteneur PHP et Nginx pour garantir l'accès synchrone aux fichiers de configuration et aux médias.
 *   **Sécurité et Performance :** Isolation du moteur PHP derrière le proxy Nginx, optimisant la gestion du trafic sur le port 80.
 *   **Persistance :** Volume dédié pour la base de données MariaDB afin d'assurer la pérennité des données.
 
-### 📸 Preuves de fonctionnement :
+###  Preuves de fonctionnement :
 *   **Capture 1 (docker_status_v2.png) :** État des services (db, wordpress_php, nginx_proxy) tous opérationnels (Status: Up).
 *   **Capture 2 (wordpress_success_demo.png) :** Page d'installation WordPress accessible via le Reverse Proxy Nginx.
 <img width="2560" height="1440" alt="image" src="https://github.com/user-attachments/assets/e6d5f395-f350-4731-a85a-7482804e389d" />
