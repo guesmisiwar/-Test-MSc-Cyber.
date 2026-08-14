@@ -55,6 +55,25 @@ Les tests suivants ont été effectués avec succès :
 
 
 
+## 🔐 Exercice 02 : Identity Management (Active Directory)
+
+
+### 🛠️ Ce que j'ai réalisé :
+1. **Installation du Domaine :** Création d'une forêt AD pour le domaine `laplateforme.io`.
+2. **Automatisation PowerShell :** Au lieu de créer les utilisateurs manuellement, j'ai développé un script `ImportAD.ps1` qui lit un fichier `utilisateurs.csv`.
+3. **Sécurité :** 
+   - Attribution du mot de passe par défaut `Azerty_2025!`.
+   - Activation de l'option **"Le changement de mot de passe est requis à la prochaine connexion"** pour garantir la confidentialité.
+4. **Gestion des Groupes :** Le script gère automatiquement l'appartenance multi-groupes (Animation, Médical, Cadres, etc.) comme demandé dans le sujet.
+
+### 📸 Preuves de fonctionnement :
+* Exécution du script dans PowerShell (Succès de l'importation).
+*   <img width="366" height="253" alt="image" src="https://github.com/user-attachments/assets/d7f30120-f0c4-4b2c-8395-dff68b2e9433" />
+
+*
+<img width="344" height="133" alt="image" src="https://github.com/user-attachments/assets/8f37d773-1d77-49a4-8f5e-4b4953467f01" />
+
+
 
 
 
