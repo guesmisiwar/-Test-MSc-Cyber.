@@ -1,107 +1,25 @@
-# -Test-MSc-Cyber.
-Test d'admission MSc Cyber.
-Candidat : Siwar GuesmiFormation 
-visée : Mastère Cybersup - Expert en cybersécuritéDépôt
-GitHub : https://github.com/guesmisiwar/-Test-MSc-Cyber
-Remarque:Tous les fichiers de configuration du projet se trouvent dans le dépôt GitHub partagé "-Test-MSc-Cyber"
+# Tests d’admission MSc Cyber
 
-# Exercice 01 : Création d'un MiniLab Réseau (Cisco Packet Tracer)
+Ce dépôt regroupe les livrables des trois exercices demandés pour le test d’admission MSc Cyber.
 
-## 1. Introduction du Projet
-L'objectif de cet exercice était de concevoir une infrastructure réseau segmentée pour une entreprise répartie sur trois bureaux, en utilisant des équipements Cisco (Router 1941, Switchs-PT, Access Points).
+## Exercice 1 — MiniLab réseau Cisco Packet Tracer
 
-## 2. Architecture Technique
-Le réseau est basé sur une topologie **Router-on-a-Stick** avec les configurations suivantes :
-- **VLAN 1 (VoIP) :** 192.168.0.0/24
-- **VLAN 10 (PC Fixes) :** 192.168.10.0/24
-- **VLAN 20 (Wi-Fi) :** 192.168.20.0/24
-- **VLAN 30 (Administration) :** 192.168.30.0/24
+Le dossier `Exercice1` contient l’explication de la configuration du miniLab réseau et les configurations du routeur, du routeur ISP et des trois switches. Le réseau comprend les VLAN 1, 10, 20 et 30, le DHCP, le Wi-Fi, le routage inter-VLAN et un accès Internet simulé.
 
-## 3. Processus de Configuration
-### Configuration des Switchs
-- Création des VLANs sur chaque switch.
-- Assignation des ports d'accès selon le cahier des charges (Ports 2-3 pour VoIP, 4-5 pour AP, 6-7 pour PC).
-- Configuration des ports **Trunk** (1 et 9) en utilisant des câbles **Copper Cross-Over** pour assurer la connectivité entre les switchs.
+Les fichiers de configuration sont dans `Exercice1/configurations`.
 
-### Configuration du Routeur
-- Activation de l'interface `GigabitEthernet 0/0`.
-- Création de sous-interfaces avec encapsulation `dot1Q` pour chaque VLAN.
-- Mise en place d'un serveur **DHCP** pour distribuer automatiquement les adresses IP (plage .10 à .50).
+## Exercice 2 — Identity Management Active Directory
 
-## 4. Tests et Vérification
-Les tests suivants ont été effectués avec succès :
-- **Attribution DHCP :** Tous les équipements reçoivent une adresse IP dans la plage correcte.
-- **Connectivité Inter-VLAN :** Ping réussi entre le PC0 (Bureau 1) et le PC2 (Bureau 2).
-- **Wi-Fi :** Connexion des Laptops via les Access Points.
+Le dossier `Exercice2` contient les scripts PowerShell pour le domaine `laplateforme.io`, l’import des utilisateurs depuis le CSV, les groupes multiples et le changement obligatoire du mot de passe à la première connexion.
 
-<img width="635" height="407" alt="image" src="https://github.com/user-attachments/assets/75f0defb-1f85-46b1-a4f6-1c2f6db6c650" />
+Le fichier `utilisateurs.csv` contient les 17 utilisateurs. Les captures de vérification sont dans `Exercice2/captures`.
 
+## Exercice 3 — WordPress avec Docker
 
-<img width="683" height="405" alt="image" src="https://github.com/user-attachments/assets/1c787eb8-bae6-46ae-858d-2858e9297796" />
+Le dossier `Exercice3` contient le fichier `docker-compose.yml`, le fichier `nginx.conf`, le README et les captures de vérification. La solution utilise MariaDB, WordPress PHP-FPM et Nginx avec un volume partagé `wp_shared_data`.
 
+Les captures montrent les conteneurs Docker actifs, l’accès à WordPress, la validation Nginx, les volumes Docker et la réponse HTTP 200.
 
-<img width="481" height="399" alt="image" src="https://github.com/user-attachments/assets/de84ee1a-3314-42d8-90d8-8aa9913d3c87" />
+## Rendu final
 
-
-<img width="390" height="213" alt="image" src="https://github.com/user-attachments/assets/7a13a4b3-9b3b-4c36-b739-feed207adbfd" />
-
-
-
-<img width="393" height="216" alt="image" src="https://github.com/user-attachments/assets/c672af72-a87c-4b52-9430-d5322d14a2a2" />
-
-<img width="392" height="493" alt="image" src="https://github.com/user-attachments/assets/6b98c69b-1df1-4e1c-a796-01d14fac1b94" />
-
-
-<img width="394" height="495" alt="image" src="https://github.com/user-attachments/assets/220be5b3-1d06-40d0-91e3-b51288a9a0c5" />
-
-<img width="393" height="500" alt="image" src="https://github.com/user-attachments/assets/4b0177da-2aa6-4495-9258-2f155f71e8ee" />
-
-<img width="440" height="285" alt="image" src="https://github.com/user-attachments/assets/0b7b648c-c4c9-477f-bb3b-f4e7f5523514" />
-
-
-
-##  Exercice 02 : Identity Management (Active Directory)
-
-
-###  Ce que j'ai réalisé :
-1. **Installation du Domaine :** Création d'une forêt AD pour le domaine `laplateforme.io`.
-2. **Automatisation PowerShell :** Au lieu de créer les utilisateurs manuellement, j'ai développé un script `ImportAD.ps1` qui lit un fichier `utilisateurs.csv`.
-3. **Sécurité :** 
-   - Attribution du mot de passe par défaut `Azerty_2025!`.
-   - Activation de l'option **"Le changement de mot de passe est requis à la prochaine connexion"** pour garantir la confidentialité.
-4. **Gestion des Groupes :** Le script gère automatiquement l'appartenance multi-groupes (Animation, Médical, Cadres, etc.) comme demandé dans le sujet.
-
-###  Preuves de fonctionnement :
-* Exécution du script dans PowerShell (Succès de l'importation).
-*   <img width="366" height="253" alt="image" src="https://github.com/user-attachments/assets/d7f30120-f0c4-4b2c-8395-dff68b2e9433" />
-
-*
-<img width="344" height="133" alt="image" src="https://github.com/user-attachments/assets/8f37d773-1d77-49a4-8f5e-4b4953467f01" />
-
-
-
-
-##  Exercice 03 : Déploiement Web Conteneurisé (WordPress/PHP-FPM/Nginx)
-
-Ce module présente une infrastructure avancée répondant aux exigences strictes du sujet, utilisant des services découplés et un stockage partagé.
-
-###  Architecture réalisée :
-Conformément à l'énoncé, l'architecture repose sur trois images distinctes orchestrées par **Docker Compose** :
-1.  **MariaDB :** Gestionnaire de base de données relationnelle.
-2.  **PHP (via WordPress-FPM) :** Moteur de traitement PHP pour l'application WordPress.
-3.  **Nginx :** Serveur Web configuré comme Reverse Proxy pour traiter les requêtes statiques et déléguer le PHP au moteur FPM via FastCGI.
-
-###  Points Clés Techniques :
-*   **Volume Commun :** Utilisation d'un volume partagé (`wp_shared_data`) entre le conteneur PHP et Nginx pour garantir l'accès synchrone aux fichiers de configuration et aux médias.
-*   **Sécurité et Performance :** Isolation du moteur PHP derrière le proxy Nginx, optimisant la gestion du trafic sur le port 80.
-*   **Persistance :** Volume dédié pour la base de données MariaDB afin d'assurer la pérennité des données.
-
-###  Preuves de fonctionnement :
-*   **Capture 1 (docker_status_v2.png) :** État des services (db, wordpress_php, nginx_proxy) tous opérationnels (Status: Up).
-*   **Capture 2 (wordpress_success_demo.png) :** Page d'installation WordPress accessible via le Reverse Proxy Nginx.
-<img width="2560" height="1440" alt="image" src="https://github.com/user-attachments/assets/e6d5f395-f350-4731-a85a-7482804e389d" />
-
-
-
-<img width="2560" height="1440" alt="image" src="https://github.com/user-attachments/assets/cf17b41c-8d1a-4e45-aaf2-375a821e6d3a" />
-
+Le dossier `Rendu` contient le document Word simple avec les explications détaillées et les captures des trois exercices.
